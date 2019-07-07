@@ -1,0 +1,41 @@
+{
+  "name": "tsboiler-koa",
+  "version": "1.0.0",
+  "description": "Simple Typescript boilerplate set up with koa.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV='development' webpack --config ./webpack/webpack.dev.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scrappybadacct/tsboiler-koa.git"
+  },
+  "author": "Conor Fleming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scrappybadacct/tsboiler-koa/issues"
+  },
+  "homepage": "https://github.com/scrappybadacct/tsboiler-koa#readme",
+  "dependencies": {
+    "@types/koa": "^2.0.49",
+    "dotenv": "^8.0.0",
+    "koa": "^2.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon-webpack-plugin": "^4.0.8",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
+}
