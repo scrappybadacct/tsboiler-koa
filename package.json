@@ -4,7 +4,8 @@
   "description": "Simple Typescript boilerplate set up with koa.",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV='development' webpack --config ./webpack/webpack.dev.js --watch"
+    "dev": "NODE_ENV='development' webpack --config ./webpack/webpack.dev.js --watch",
+    "prod": "NODE_ENV='production' webpack --config ./webpack/webpack.prod.js"
   },
   "repository": {
     "type": "git",

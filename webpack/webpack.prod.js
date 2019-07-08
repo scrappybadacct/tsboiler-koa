@@ -1,20 +1,20 @@
 const path = require("path");
 const { DefinePlugin } = require("webpack");
-const NodemonWebpackPlugin = require("nodemon-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
   target: "node",
-  entry: "./src/app.js",
+  entry: "./src/serverCallback.ts",
   output: {
-    path: path.resolve(__dirname, "../dist"),
-    filename: "app.js"
+    path: path.resolve(__dirname, "../build"),
+    filename: "serverCallback.js",
+    libraryTarget: "commonjs2",
+    libraryExport: "default"
   },
   plugins: [
-    new DefinePlugin({ NODE_ENV: JSON.stringify("development") }),
-    new CleanWebpackPlugin(),
-    new NodemonWebpackPlugin()
+    new DefinePlugin({ NODE_ENV: JSON.stringify("production") }),
+    new CleanWebpackPlugin()
   ],
   module: {
     rules: [

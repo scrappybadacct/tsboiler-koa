@@ -1,8 +1,9 @@
-import server from "./server";
+import http from "http";
+import serverCallback from "./serverCallback";
 import dotenv from "dotenv";
 
 dotenv.config();
 
 const port = process.env.PORT || 3001;
 
-server.listen(port);
+http.createServer(serverCallback).listen(port);
